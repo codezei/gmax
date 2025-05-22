@@ -1,0 +1,15 @@
+.about {
+    &__info {
+        line-height: 1.5;
+    }
+    &__btn {
+        margin-top: var(--h2)
+    }
+    &__image {
+        width: 100%;
+        max-width: 400px;
+        display: inline-block;
+    }
+
+
+}

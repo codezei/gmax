@@ -1,0 +1,93 @@
+section.services#services.block.bg-white
+        .container
+            .services__navigation
+                .row.align-items-center.justify-content-between.services__row
+                    .col-auto 
+                        
+                            h2.services__title.text-uppercase Nasze usługi czyszczenia
+                            h3.h6.text-light.services__subtitle Pranie tapicerki, czyszczenie dywanów, wnętrz aut, zasłon, rolet i mycie okien – wszystko z dojazdem do klienta.
+                    .col-auto 
+                        .swiper-navigation
+                            .services-button-prev.btn.btn-secondary.btn-small
+                                svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                            .services-button-next.btn.btn-secondary.btn-small
+                                svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .swiper.services-swiper 
+                .swiper-wrapper
+                    .swiper-slide
+                        .service.custom-bg-light
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-furniture.webp", type="image/webp")
+                                    img(src="img/service-furniture.jpg", alt="Pranie tapicerki meblowej", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Pranie tapicerki meblowej
+                                .service__description Czyścimy kanapy, fotele, narożniki i wózki dziecięce. Skutecznie usuwamy plamy, kurz i zapachy.
+                            .service__footer 
+                                a.service__more(href="furniture.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg-light
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-mattress.webp", type="image/webp")
+                                    img(src="img/service-mattress.jpg", alt="Czyszczenie materacy", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Czyszczenie materacy
+                                .service__description Usuwamy roztocza, plamy, pot i alergeny z materacy jedno- i dwuosobowych. Bezpiecznie i skutecznie.
+                            .service__footer 
+                                a.service__more(href="mattress.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg-light
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-carpet.webp", type="image/webp")
+                                    img(src="img/service-carpet.jpg", alt="Czyszczenie dywanów i wykładzin", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Czyszczenie dywanów
+                                .service__description Głębokie pranie dywanów i wykładzin. Eliminujemy zabrudzenia, sierść i alergeny.
+                            .service__footer 
+                                a.service__more(href="carpet.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg-light 
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-salon.webp", type="image/webp")
+                                    img(src="img/service-salon.jpg", alt="Pranie tapicerki samochodowej", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Pranie tapicerki samochodowej
+                                .service__description Kompleksowe czyszczenie wnętrza auta: siedzenia, podsufitka, podłoga i bagażnik. Auto wygląda jak nowe.
+                            .service__footer 
+                                a.service__more(href="salon.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg-light
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-window.webp", type="image/webp")
+                                    img(src="img/service-window.jpg", alt="Mycie i polerowanie powierzchni szklanych", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Mycie i polerowanie szyb
+                                .service__description Profesjonalne mycie okien i polerowanie luster. Czyste powierzchnie bez smug i zacieków.
+                            .service__footer 
+                                a.service__more(href="window.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg-light
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-curtain.webp", type="image/webp")
+                                    img(src="img/service-curtain.jpg", alt="Czyszczenie tkanin i dekoracji", loading="lazy", height="200")
+                            .service__body
+                                h6.service__title.text-third Czyszczenie zasłon i rolet
+                                .service__description Odświeżamy zasłony i rolety bez demontażu. Usuwamy kurz i nieprzyjemne zapachy.
+                            .service__footer 
+                                a.service__more(href="curtain.html") Więcej szczegółów
+            .services__btn
+                .row 
+                    .col-auto
+                        a.btn.btn-primary.btn-normal(href="#cta") Umów się
+                    .col-auto
+                        a.btn.btn-secondary.btn-normal(href="tel:+48452230843") 
+                            svg.icon.shake(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                path(fill-rule="evenodd", d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z")
+                            | Zadzwoń

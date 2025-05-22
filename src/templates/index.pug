@@ -1,0 +1,60 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Gmax - Profesjonalna Chemia Czystości | Gdańsk i okolice"
+  - const themeColor = "#ffffff"
+  - const pageDescription = "Gmax oferuje profesjonalne usługi prania tapicerki meblowej, czyszczenia dywanów, tapicerki samochodowej, mycia okien oraz prania zasłon i rolet w Gdańsku i okolicach. Szybko, dokładnie i bez ukrytych kosztów."
+  - const pageKeywords = "Gmax, pranie tapicerki Gdańsk, czyszczenie dywanów Gdańsk, tapicerka samochodowa Gdańsk, mycie okien Gdańsk, czyszczenie rolet, czyszczenie zasłon, pranie materacy, usługi porządkowe Gdańsk"
+  - const pageUrl = "";
+  - const pageImage = "img/logo-big.png";
+  - const twitterImage = "img/logo-big.png";
+
+append head
+  link(rel="preload" as="image" href="img/promo-bg-mob.webp" type="image/webp" media="(max-width: 575px)")
+  script(type="application/ld+json").
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gmax",
+      "image": "https://gmax.com.pl/img/logo.png",
+      "url": "https://gmax.com.pl/",
+      "telephone": "+48 452 230 843",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gdańsk",
+        "addressCountry": "PL"
+      },
+      "description": "Gmax – Profesjonalne czyszczenie tapicerki meblowej, samochodowej, dywanów i rolet w Gdańsku i okolicach. Dojazd do klienta, szybka realizacja i uczciwe ceny.",
+      "areaServed": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gdańsk",
+          "addressCountry": "PL"
+        }
+      }
+    }
+
+
+append content
+  include components/header
+  main
+    include components/promo
+    //- include components/feature
+    include components/services
+    include components/about
+    include components/why
+    include components/how
+    include components/price
+    include components/works
+    include components/cta
+    include components/reviews
+    include components/faq
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts
